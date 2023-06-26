@@ -1,0 +1,25 @@
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.cot {
+  position: relative;
+  background-color: var(--color-gray-100);
+  width: 100%;
+  overflow: hidden;
+  flex-direction: column;
+  opacity: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.cot.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-left;
+}

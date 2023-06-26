@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Malgun+Gothic:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+body {
+  margin: 0;
+  line-height: normal;
+  overflow-x:hidden;
+  
+}
+:root {
+  /* fonts */
+  --font-poppins: Poppins;
+  --font-roboto: Roboto;
+  --font-malgun-gothic: "Malgun Gothic";
+  --font-public-sans: "Public Sans";
+
+  /* font sizes */
+  --font-size-5xs: 10px;
+  --font-size-4xs: 13px;
+  --font-size-3xs: 14px;
+  --font-size-2xs: 15px;
+  --font-size-xs: 15.99px;
+  --font-size-sm: 19px;
+  --font-size-base: 20px;
+  --font-size-lg: 21px;
+  --font-size-xl: 21.99px;
+  --font-size-2xl: 22px;
+  --font-size-3xl: 23px;
+  --font-size-4xl: 24.99px;
+  --font-size-5xl: 24px;
+  --font-size-6xl: 25px;
+  --font-size-7xl: 26px;
+  --font-size-8xl: 32px;
+
+  /* Colors */
+  --color-gray-100: #f3f4f9;
+  --color-gray-200: #b9b9b9;
+  --color-gray-300: #939393;
+  --color-white: #fff;
+  --azul-default1: #0078f0;
+  --color-indigo-200: rgba(0, 120, 240, 0.1);
+  --color-indigo-300: rgba(0, 120, 240, 0.5);
+
+  /* Gaps */
+  --gap-2xs: 8.97px;
+  --gap-xs: 9.99px;
+  --gap-sm: 10px;
+  --gap-md: 26.9px;
+  --gap-lg: 29.98px;
+  --gap-xl: 36px;
+
+  /* Paddings */
+  --padding-4xs: 5px;
+  --padding-3xs: 9.994791984558105px;
+  --padding-2xs: 10px;
+  --padding-xs: 14.9921875px;
+  --padding-sm: 15px;
+  --padding-md: 17px;
+  --padding-lg: 23.98750114440918px;
+  --padding-xl: 24px;
+  --padding-2xl: 29px;
+  --padding-3xl: 40px;
+
+  /* border radiuses */
+  --br-sm: 8px;
+  --br-md: 10px;
+  --br-lg: 28.39px;
+}
+

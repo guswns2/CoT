@@ -1,0 +1,220 @@
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.logbtn-child,
+.rec,
+.rec-child {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.rec-child {
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-radius: var(--br-sm);
+  background-color: #292929;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  filter: blur(3px);
+}
+.logbtn-child,
+.rec {
+  height: 92.27%;
+  top: 7.73%;
+  right: -0.14%;
+  left: 0.14%;
+}
+.logbtn-child {
+  cursor: pointer;
+  border: 1px solid var(--color-gray-300);
+  padding: 0;
+  background-color: black;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-radius: var(--br-sm);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  filter: blur(0.5px);
+  box-sizing: border-box;
+
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: var(--font-roboto);
+  color: white;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.logbtn,
+.signbtn-child {
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+}
+.logbtn {
+  border: 0;
+  background-color: transparent;
+  height: 7.61%;
+  width: 25.45%;
+  top: 71.86%;
+  right: 37.3%;
+  bottom: 20.53%;
+  left: 37.25%;
+}
+.signbtn-child {
+  border: 1px solid var(--color-gray-100);
+  background-color: var(--color-white);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-sm);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  filter: blur(0.5px);
+  box-sizing: border-box;
+
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: var(--font-roboto);
+  color: gray;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.pw,
+.signbtn {
+  border: 0;
+  background-color: transparent;
+}
+.signbtn {
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+  height: 6.34%;
+  width: 17.61%;
+  top: 82.7%;
+  right: 41.2%;
+  bottom: 10.96%;
+  left: 41.2%;
+}
+.pw {
+  height: 5.06%;
+  width: 25.73%;
+  top: 55.01%;
+  right: 37.16%;
+  bottom: 39.93%;
+  left: 37.11%;
+}
+.id,
+.login6,
+.pw {
+  position: absolute;
+}
+.id {
+  border: 0;
+  background-color: transparent;
+  /* -webkit-text-fill-color: #fff; */
+  height: 5.06%;
+  width: 25.73%;
+  top: 42.52%;
+  right: 37.16%;
+  bottom: 52.42%;
+  left: 37.11%;
+}
+
+input,
+input:autofill,
+input:autofill:hover,
+input:autofill:focus,
+input:autofill:active {
+	-webkit-text-fill-color: #fff;
+    -webkit-box-shadow: 0 0 0px 1000px #292929 inset;
+    box-shadow: 0 0 0px 1000px #292929 inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.login6 {
+  height: 95.09%;
+  width: 99.14%;
+  top: 2.5%;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.Loginicon,
+.ltext {
+  position: absolute;
+  height: 4.61%;
+  width: 5.93%;
+  top: 21.56%;
+  right: 47.03%;
+  bottom: 73.83%;
+  left: 47.04%;
+}
+.Loginicon {
+  height: 15.79%;
+  width: 9.41%;
+  top: 0;
+  right: 45.31%;
+  bottom: 84.21%;
+  left: 45.28%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.container {
+  position: absolute;
+  height: 80.28%;
+  width: 73.96%;
+  top: 9.91%;
+  right: 13.02%;
+  bottom: 9.81%;
+  left: 13.02%;
+}
+.login4 {
+  position: relative;
+  background-color: #525050;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  opacity: 0;
+  text-align: center;
+  font-size: var(--font-size-2xl);
+  color: white;
+  font-family: var(--font-public-sans);
+}
+.login4.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-left;
+}
+@media screen and (max-width: 1200px) {
+  .rec {
+    background-color: #292929;
+    display: flex;
+  }
+}
+@media screen and (max-width: 860px) {
+  .rec-child {
+    background-color: #292929;
+    display: flex;
+    width: 100%;
+    border-radius: var(--br-sm);
+  }
+}

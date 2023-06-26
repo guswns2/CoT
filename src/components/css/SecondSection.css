@@ -1,0 +1,270 @@
+@keyframes hovercolor {
+  to {
+    background-color: rgb(190, 187, 187);
+  }
+}
+
+.powercard {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 40%;
+  flex-direction: column;
+  width: 70%;
+  line-height: 0.8;
+  left: 10%;
+}
+.carborncard {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 40%;
+  flex-direction: column;
+  width: 70%;
+  line-height: 0.8;
+  top: 8%;
+  left: 10%;
+}
+.monthcard {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 90%;
+  flex-direction: column;
+  width: 100%;
+  line-height: 0.8;
+  /* left: 25%; */
+  top: 15%;
+}
+.ctext {
+  color: rgba(218, 218, 218, 0.945);
+  position: relative;
+  align-self: stretch;
+  font-size: 20px;
+  display: flex;
+}
+.powertext {
+  color: rgba(252, 255, 84, 0.897);
+  position: relative;
+  align-self: stretch;
+  font-size: 22px;
+}
+.carborntext {
+  color: #37db4dbb;
+  position: relative;
+  align-self: stretch;
+  font-size: 22px;
+}
+.b {
+  position: relative;
+  line-height: 220%;
+  color: #ffffff;
+  font-size: 20px;
+  align-self: stretch;
+}
+
+.b4,
+.selectdate {
+  position: relative;
+}
+.selectdate {
+  flex: 1;
+  mix-blend-mode: normal;
+}
+.b4 {
+  font-size: var(--font-size-7xs);
+  font-family: var(--font-poppins);
+  color: var(--color-gray);
+  text-align: center;
+}
+
+.selectedDay {
+  display: inline-block;
+  position: relative;
+  background-color: #292929;
+  text-align: center;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.info1-box11 {
+  border-radius: 3px;
+  display: inline-block;
+  flex-direction: row;
+  mix-blend-mode: normal;
+  background-color: #e2e1e1;
+  width: 218px;
+  align-self: center;
+  height: 30px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-sm);
+  margin-left: 10px;
+}
+
+input {
+  vertical-align: middle;
+}
+.pdfbutton {
+  cursor: pointer;
+  background: none;
+  border:none;
+  width: max-content;
+  height: max-content;
+  /* background-image: url(../../../public/download-pdf.png) no-repeat; */
+}
+.imgbutton {
+  cursor: pointer;
+  background: none;
+  border:none;
+  width: max-content;
+  height: max-content;
+  /* background-image: url(../../../public/download-img.png) no-repeat; */
+}
+.info1-box21,
+.second-container1,
+.second-info1 {
+  display: flex;
+  flex-direction: row;
+  mix-blend-mode: normal;
+}
+.info1-box21 {
+  border-radius: var(--br-sm);
+  /* background-color: var(--color-white); */
+  width: 90px;
+  height: 30px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.second-container1,
+.second-info1 {
+  align-self: stretch;
+}
+.second-info1 {
+  flex: 1;
+  border-radius: 5px;
+  background-color: #292929;
+  align-items: center;
+  justify-content: space-between;
+}
+.second-container1 {
+  border-radius: var(--br-sm) var(--br-sm) 0 0;
+  background-color: #535353;
+  height: 80px;
+  flex-shrink: 0;
+  overflow: hidden;
+  padding: var(--padding-2xs) var(--padding-2xs) 5px var(--padding-3xs);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.info2-box1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 9.39%;
+  width: 94.14%;
+  top: 3.14%;
+  right: 3.26%;
+  bottom: 87.47%;
+  left: 2.61%;
+}
+
+.info2-box2 {
+  position: relative;
+  height: 82%;
+  width: 94.14%;
+  top: 13.5%;
+  right: 3.26%;
+  bottom: 87.47%;
+  left: 3%;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.second-info2-1 {
+  flex: 2.02655;
+}
+.second-info2-2 {
+  flex: 1;
+}
+.second-info2-1,
+.second-info2-2 {
+  position: relative;
+  border-radius: 5px;
+  background-color: #292929;
+  height: 300px;
+  mix-blend-mode: normal;
+  box-shadow: rgba(196, 194, 194, 0.664) 0px 1px 2px 0px,
+    rgba(160, 160, 160, 0.801) 0px 2px 6px 2px;
+}
+
+.second-container2 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  border-radius: 0 0 var(--br-sm) var(--br-sm);
+  background-color: #535353;
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-2xs) var(--padding-2xs) var(--padding-2xs);
+  justify-content: center;
+  gap: 15px;
+  mix-blend-mode: normal;
+  font-size: var(--font-size-4xl);
+  color: var(--color-gray-300);
+}
+.second-section {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-xs) var(--padding-lg);
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-gray);
+  font-family: var(--font-poppins);
+  /* margin-bottom: 20px; */
+  background-color: #535353;
+}
+
+@media screen and (max-width: 428px) {
+  .second-section {
+    flex-direction: column;
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .second-container2 {
+    flex-direction: column;
+  }
+  .second-info2-1 {
+    align-self: stretch;
+    flex: none;
+    height: 300px;
+  }
+  .second-info2-2 {
+    align-self: stretch;
+    flex: none;
+    height: 200px;
+  }
+  .monthcard {
+    flex-direction: row;
+  }
+  .powercard {
+    left: 18%;
+    bottom: 20%;
+  }
+  .carborncard {
+    height: 95%;
+  }
+}

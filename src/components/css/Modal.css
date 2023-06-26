@@ -1,0 +1,106 @@
+.text-field {
+  align-self: stretch;
+}
+
+.text-field {
+  border: 0;
+  background-color: transparent;
+}
+.statedefault-iconoff,
+.statedefault-iconoff1 {
+  position: absolute;
+  height: 19.17%;
+  width: 70.76%;
+  top: 50%;
+  right: 14.62%;
+  bottom: 30.83%;
+  left: 14.62%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-md);
+}
+.statedefault-iconoff1 {
+  top: 25.49%;
+  bottom: 55.34%;
+  background-color: var(--color-white);
+}
+.vector-icon {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+}
+.vector-wrapper {
+  cursor: pointer;
+  border: 0;
+  padding: 4px;
+  background-color: #e5e5e5;
+  position: absolute;
+  top: 14px;
+  right: 13px;
+  border-radius: 29px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+.b2 {
+  position: relative;
+  font-size: 15px;
+  font-family: var(--font-inter);
+  text-align: left;
+  color: rgb(41, 41, 41);
+}
+.stateactive-typeprimary {
+  cursor: pointer;
+  border: 0;
+  padding: 0 16px;
+  background-color: rgba(54, 54, 54, 0.295);
+  position: absolute;
+  top: calc(50% + 141px);
+  left: calc(50% - 43px);
+  border-radius: 5px;
+  width: 85px;
+  height: 38px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+.modal {
+  position: absolute;
+  border-radius: 15px;
+  background-color: var(--color-white);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
+  border: 1px solid #dee2e6;
+  box-sizing: border-box;
+  width: 340px;
+  height: 410px;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-300);
+  font-family: var(--font-inter);
+  top: 30%;
+  /* z-index: 999; */
+}
+.Mcontainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  z-index: 999;
+}
