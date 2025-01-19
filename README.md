@@ -6,11 +6,11 @@
 
 
 ## ⚙ 개발 환경
-- Web : Javascript, React
+- Web : Javascript, React (v18.2.0)
 - Server : Node.js (v16.17.1), Flask
 - DataBase : MySQL
 - MachineLearning : Python (v3.9.12)
-- Code Editor : VisualStudio Code, Jupyter, MySQL WorkBench
+- Code Editor : VSCode, Jupyter, DBeaver
 
 
 ## 🔍 주요 기능
@@ -34,22 +34,4 @@
 
 
 ## 🔁 프로젝트 설치 및 실행
-- pm2 설치
-  - npm install pm2 -g
-
-- node_module 설치
-  - npm install -f (v8.15.0)
-
-- Python Interpreter 선택
-  - Ctrl+Shift+p > Python: Select Interpreter > Python 3.9.12('base') ~\anaconda3\python.exe
-
-- model.py 라이브러리 설치
-  - pip install flask
-  - pip install pymysql
-  - pip install sqlalchemy
-  - pip install bs4
-  - pip install tqdm
-  - pip install flask_cors
-
-- 프로그램 실행
-  - npm start
+https://www.notion.so/COT-17cffb5eb3568022bf63fc406a39345f?pvs=4
