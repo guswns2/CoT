@@ -166,14 +166,16 @@ router.post("/ChartNow", function (request, response) {
 
     // 예측 전력량 반복문
     conn.query(sql2, (err2, rows2) => {
-      if (rows2.length > 0) {
+      if (rows2 != undefined && rows2.length > 0) {
         console.log("데이터 받아오기 성공 pre : " + rows2.length);
         for (let i = 0; i < rows2.length; i++) {
           preArr.push(rows2[i].pre_power);
           // console.log(`row2[${i}]`, rows2[i]);
         }
+      } else {
+        console.log("chartnow pre undefined: " + rows2)
       }
-      if (rows.length > 0) {
+      if (rows != undefined && rows.length > 0) {
         console.log("preArr : ", preArr);
         console.log("데이터 받아오기 성공 time : " + rows.length);
         let labelsArr = [];
@@ -236,7 +238,7 @@ router.post("/ChartNow", function (request, response) {
           nowtime: date,
         });
       } else {
-        console.log("ChartNow 실패");
+        console.log("chartnow time undefined: " + rows)
       }
     });
   });

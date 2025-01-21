@@ -20,7 +20,6 @@ ChartJS.register(
 )
 
 function BarChartNow (){
-
   const [todayElect, setTodayElect] = useState([]);
   const [yesterdayElect, setYesterdayElect] = useState([]);
   const [predictElect, setPredictElect] = useState([]);
@@ -103,7 +102,6 @@ const options = {
 };
 
   useEffect(() => {
-
     // 시간대별 전력소비량/탄소배출량
     axios
       .post("http://127.0.0.1:3001/ChartNow", {
@@ -111,6 +109,7 @@ const options = {
       })
       .then((result) => {
         // 받는 부분
+        console.log("chartnow result: " + result)
         console.log("todayElect : ", result.data.todayElect);
         console.log("yesterdayElect : ", result.data.yesterdayElect);
         console.log("todayLabels : ", result.data.todayLabels);
@@ -129,14 +128,12 @@ const options = {
   }, []);
   
     return(
-        <>
-        {console.log("now 전달 체크 : ", todayElect)}
-            <Bar
-            data={data}
-            options={options}
-          
-            ></Bar>
-        </>
+      <>
+        <Bar
+          data={data}
+          options={options}
+        ></Bar>
+      </>
     )
 }
 

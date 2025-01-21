@@ -1,7 +1,7 @@
 from flask import Flask, request
 from datetime import datetime
 import pymysql
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, text
 pymysql.install_as_MySQLdb()
 import requests as req
 from bs4 import BeautifulSoup as bs
@@ -94,7 +94,7 @@ def crawling() :
     df_ip = df_rs.interpolate()
     df_re = df_ip.reset_index()
 
-    engine = create_engine("mysql+mysqldb://cot:sion1234@project-db-stu.ddns.net:3307/cot", encoding='utf-8')
+    engine = create_engine("mysql+mysqldb://cot:sion1234@project-db-stu.ddns.net:3307/cot")
     conn = engine.raw_connection()
     cursor = conn.cursor()
     
@@ -169,9 +169,25 @@ def crawling() :
 
     # DB로 데이터프레임 전송
     predict2.to_sql(name='predict', con=engine, if_exists='append', index=False)
-    sql = "delete from predict where num in (select ext_id from (select min(num) ext_id from predict group by pre_id, pre_time having count(*)>1) tmp);"
-    engine.execute(sql)
-    conn.close() 
+    # 연결 생성
+    with engine.connect() as connection:
+        # SQL 실행
+        sql = text("""
+                   delete from predict 
+                   where num in 
+                    (
+                        select ext_id 
+                        from (
+                            select min(num) ext_id 
+                            from predict 
+                            group by pre_id, pre_time 
+                            having count(*)>1) tmp);
+                   """)
+        connection.execute(sql)
+    
+    # 엔진 종료
+    engine.dispose();
+    # conn.close() 
 
 
     return "1"
